@@ -1,0 +1,17 @@
+name: npm test
+on: 
+  workflow_dispatch:
+               
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps: 
+      # TO COMPLETE    
+      - name: Check out
+        uses: actions/checkout@v4
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with: 
+         node-version: 'lts/*'
+      - name: Install Nmp
+        run: npm install
