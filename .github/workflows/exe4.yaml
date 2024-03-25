@@ -1,6 +1,6 @@
-name: reusable workflow
+name: Switch Node version
 on: 
-  workflow_dispatch:
+  pull_request:
 
 jobs:
   run-npm-test:
@@ -15,6 +15,5 @@ jobs:
         - name: run test
           shell: bash
           run: |
-            node -v
             npm install
             npm test
