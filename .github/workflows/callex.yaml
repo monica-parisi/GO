@@ -6,5 +6,6 @@ on:
 jobs:
   call-workflow:
     uses: ./.github/workflows/NewEx4.yaml
-
+     with: 
+      node-version: '18'
   
