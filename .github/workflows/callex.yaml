@@ -1,0 +1,12 @@
+name: Call the reusable workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  call-workflow:
+    uses: ./.github/workflows/NewEx4.yaml
+
+  
