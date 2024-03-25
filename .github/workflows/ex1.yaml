@@ -28,4 +28,5 @@ jobs:
         with: 
          node-version: 'lts/*'
       - name: run job1
+        run: npm install
         run: npm test
